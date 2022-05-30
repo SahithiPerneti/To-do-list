@@ -1,0 +1,45 @@
+.green {
+    color:rgb(14, 165, 14);
+}
+.red {
+    color:rgb(245, 35, 35);
+}
+.blue {
+    color:rgb(14, 180, 245)
+}
+table, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-transform: capitalize;
+}
+#itemList { font-size: 1rem;}
+.show { display: block;}
+.hide { visibility: hidden;}
+#title {
+    margin-top: 5rem;
+}
+.item-completed {
+    background-color: rgb(176, 241, 176);
+    /* text-decoration: line-through; */
+}
+.item-in-progress {
+    background-color: rgb(245, 231, 208);
+}
+.item-open {
+    background-color: rgb(219, 226, 233);
+}
+#message {
+    float: right;
+    padding: 6px 12px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    line-height: 110%;
+    border-radius: 8px;
+    background-color: rgb(242, 242, 253);
+}
+#itemInput {
+    box-shadow: none;
+}
+.success {
+    background-color: rgb(215, 247, 215);
+}

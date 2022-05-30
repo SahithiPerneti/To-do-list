@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col mx-auto col-md-8 mt-3 text-center">
+        <form id="itemForm" >
+            <h3 id="title"> MENU LIST</h3>
+            <div class="mesaage-wrapper">
+              <label id="message" class="alert"></label>
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control"  id="itemInput" value="" placeholder="Please enter name...">
+                <button class="btn btn-outline-primary" id="addBtn">ADD ITEM</button>
+                <button class="btn btn-outline-primary" style="display: none;" id="editBtn">UPDATE</button>
+            </div>
+        </form>
+        <table class="table">
+            <thead class="table-light">
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">To-do</th>
+                <th scope="col">Created Time</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col">Completed Time</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody id="itemList"></tbody>
+          </table>
+        <input type="hidden" id="citem" value="">
+        </div>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
